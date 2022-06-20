@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import tn.esprit.spring.entities.Departement;
+import tn.esprit.spring.entities.Employe;
 import tn.esprit.spring.entities.Entreprise;
 import tn.esprit.spring.services.IEmployeService;
 import tn.esprit.spring.services.IEntrepriseService;
@@ -83,5 +84,11 @@ public class RestControlEntreprise {
 	public void deleteDepartementById(@PathVariable("iddept") int depId) {
 		ientrepriseservice.deleteDepartementById(depId);
 
+	}
+
+	@GetMapping(value = "/findEntrebyname/{name}")
+	@ResponseBody
+	public Entreprise getByname(@PathVariable("name")String name) {
+		return ientrepriseservice.findByName(name);
 	}
 }
