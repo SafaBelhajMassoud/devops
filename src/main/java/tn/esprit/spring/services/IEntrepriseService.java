@@ -14,5 +14,6 @@ public interface IEntrepriseService {
 	public void deleteEntrepriseById(int entrepriseId);
 	public void deleteDepartementById(int depId);
 	public Entreprise getEntrepriseById(int entrepriseId);
+	public List<Entreprise>  getEntrepriseAll() ;
 	public Entreprise findByName(String name);
 }

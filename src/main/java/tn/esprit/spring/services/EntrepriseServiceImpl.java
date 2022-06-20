@@ -69,6 +69,9 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
 	public Entreprise getEntrepriseById(int entrepriseId) {
 		return entrepriseRepoistory.findById(entrepriseId).get();
 	}
+	public List<Entreprise> getEntrepriseAll() {
+		return (List<Entreprise>) entrepriseRepoistory.findAll();
+	}
 
 	public Entreprise findByName(String name) {
 		return entrepriseRepoistory.findByName(name);
