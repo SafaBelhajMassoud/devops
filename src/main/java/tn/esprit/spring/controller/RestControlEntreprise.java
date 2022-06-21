@@ -1,7 +1,6 @@
 package tn.esprit.spring.controller;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
 import tn.esprit.spring.entities.Departement;
 import tn.esprit.spring.entities.Entreprise;
 import tn.esprit.spring.services.IEmployeService;
@@ -60,6 +58,13 @@ public class RestControlEntreprise {
 
 		return ientrepriseservice.getEntrepriseById(entrepriseId);
 	}
+
+	@GetMapping(value = "getEntreprises")
+	@ResponseBody
+	public List<Entreprise>  getEntrepriseAll() {
+
+		return ientrepriseservice.getEntrepriseAll();
+	}
     
     // http://localhost:8081/SpringMVC/servlet/ajouterDepartement
  	//{"id":1,"name":"Telecom"}
@@ -83,5 +88,11 @@ public class RestControlEntreprise {
 	public void deleteDepartementById(@PathVariable("iddept") int depId) {
 		ientrepriseservice.deleteDepartementById(depId);
 
+	}
+
+	@GetMapping(value = "/findEntrebyname/{name}")
+	@ResponseBody
+	public Entreprise getByname(@PathVariable("name")String name) {
+		return ientrepriseservice.findByName(name);
 	}
 }
