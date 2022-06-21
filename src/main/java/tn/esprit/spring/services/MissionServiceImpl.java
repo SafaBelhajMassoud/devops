@@ -21,9 +21,10 @@ public class MissionServiceImpl implements  IMissionService{
             return (List<Mission>) missionRepoistory.findAll();
  }
 
+
     @Override
     public Mission getMission(int missionId) {
-        return missionRepoistory.findById(missionId).get();
+        return missionRepoistory.findById(missionId).orElse(null);
     }
 
     @Override
