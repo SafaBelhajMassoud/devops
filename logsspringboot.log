@@ -375,3 +375,31 @@
 2020-03-04 19:05:25.123  INFO 8940 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-03-04 19:05:25.187  INFO 8940 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-03-04 19:05:25.225  INFO 8940 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-21 13:13:35.181  INFO 14536 --- [main] SpringBootCoreDataJpaMvcRest1Application : Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on DESKTOP-1JGJUBA with PID 14536 (C:\Users\sghai\OneDrive\Desktop\dev\devops\target\classes started by sghai in C:\Users\sghai\OneDrive\Desktop\dev\devops)
+2022-06-21 13:13:35.360  INFO 14536 --- [main] SpringBootCoreDataJpaMvcRest1Application : No active profile set, falling back to default profiles: default
+2022-06-21 13:13:39.196  INFO 14536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-06-21 13:13:40.242  INFO 14536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 838ms. Found 6 repository interfaces.
+2022-06-21 13:13:44.232  INFO 14536 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fb6cd824] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-21 13:13:48.351  INFO 14536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-06-21 13:13:48.435  INFO 14536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-21 13:13:48.436  INFO 14536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2022-06-21 13:13:48.990  INFO 14536 --- [main] o.a.c.c.C.[.[localhost].[/SpringMVC]     : Initializing Spring embedded WebApplicationContext
+2022-06-21 13:13:48.990  INFO 14536 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 13100 ms
+2022-06-21 13:13:49.881  INFO 14536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-21 13:13:50.161  INFO 14536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-21 13:13:50.487  INFO 14536 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-06-21 13:13:50.848  INFO 14536 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2022-06-21 13:13:50.854  INFO 14536 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-06-21 13:13:51.790  INFO 14536 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-06-21 13:13:52.430  INFO 14536 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-06-21 13:14:03.386  INFO 14536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 13:14:04.197  INFO 14536 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2022-06-21 13:14:09.161  INFO 14536 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-21 13:14:09.486  WARN 14536 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-21 13:14:10.195  INFO 14536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/SpringMVC'
+2022-06-21 13:14:10.244  INFO 14536 --- [main] SpringBootCoreDataJpaMvcRest1Application : Started TimesheetSpringBootCoreDataJpaMvcRest1Application in 38.882 seconds (JVM running for 50.173)
+2022-06-21 13:17:30.885  INFO 14536 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/SpringMVC]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 13:17:30.885  INFO 14536 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-21 13:17:30.907  INFO 14536 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
